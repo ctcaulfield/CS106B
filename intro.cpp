@@ -1,6 +1,9 @@
-#include "/libraries/genlib.h"
+// #include "libraries/genlib.h"
 #include <iostream>
-#include </libraries/simpio.h>
+using namespace std; 
+// #include "libraries/simpio.h"
+
+// need to figure out how to add libraries
 
 /* 
 Default argument used - (-1)
@@ -8,8 +11,7 @@ Default argument used - (-1)
 double GetScoresAndAverage(int numScores = -1);
 
 int main(){
-    
-    count << "Welcome" << endl;
+    cout << "Welcome" << endl;
     double average = GetScoresAndAverage();
     cout << "Average: " << average << endl;
     return 0;
@@ -22,7 +24,7 @@ double GetScoresAndAverage(int sentinel){
 
     while(true){
         sum += value;
-        cout << "next? " << "(" << sentinel " if done):";
+        cout << "next? " << "(" << sentinel << " if done):";
         if (value == sentinel){
             break;
         }
